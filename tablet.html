@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Lucky Mobile</title>
+	<link rel="stylesheet" href="style/store.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar">
+				<a href="index.html" class="logo">Lucky Mobile</a>
+				<button class="hamburger" id="hamburger">
+					<i class="fa fa-bars"></i>
+				</button>
+				<ul class="mainNav" id="js-menu">
+					<li>
+						<a href="index.html" class="nav-links">Home</a>
+					</li>
+					<li>
+						<a href="store.html" class="nav-links">Store </a>
+					<li>
+						<a href="about.html" class="nav-links">About</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-links">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="featured"><h1>Store</h1></div>
+			<div class="featuredItem">
+				<div class="textOne">
+					<button onclick="document.location='store.html'">iPhone</button>
+				</div>
+				<div class="textTwo">
+					<button onclick="document.location='android.html'">Android</button>
+				</div>
+				<div class="textThree">
+					<button onclick="document.location='tablet.html'">Tablet</button>
+				</div>
+			</div>
+			<div class="product">
+				<div class="productHead"><h3>Tablet</h3></div>
+				<div class="gallery1">
+					<diV class="itemImage1">
+						<img src="img/q.jpg" id="expandedImg" alt="ipad">
+					</diV>
+					<div class="subgallery1">
+						<div class="itemImage_2">
+							<img src="img/ipad_rosegold.jpg" onclick="myFunction(this)" alt="iphone">
+						</div>
+						<div class="itemImage_3">
+							<img src="img/ipad-air-selec.jpg" onclick="myFunction(this)" alt="ipad">
+						</div>
+						<div class="itemImage_4">
+								<img src="img/ipad-air.jpg" onclick="myFunction(this)" alt="iphone">
+						</div>
+						<div class="itemImage_5">
+								<img src="img/e8e821.jpeg" onclick="myFunction(this)" alt="samsung">
+						</div>
+					</div>
+				</div>
+				<div class="gallery2">
+					<div class="brandText">
+						<h3>iPad Pro 12</h3>
+						<p>- 12.9 Liquid Retina display</p>
+						<p>- ProMotion technology and True Tone</p>
+						<p>- A12Z Bionic chip with Neural Engine</p>
+						<p>- Compatible with Magic Keyboard and Smart Keyboard Folio</p>
+						<p>- Compatible with Apple Pencil (2nd generation)</p>
+						<p>- Up to 1TB</p>
+						<p>- 12MP Wide and 10MP Ultra Wide cameras</p>
+						<p>- USB-C connector</p></div>
+					<div class="dollar"><p>Starting at $1149</p></div>
+					<div class="buybutton"><button onclick="document.location='checkout.html'">Buy</button></div>
+				</div>
+			</div>
+			<div class="onSale"><h3>On Sale</h3></div>
+			<div class="onSaleItem">
+				<div class="saleOne"><img src="img/sams10.jpg" alt="samung" onclick="document.location='store.html'"></div>
+				<div class="textSaleOne">
+					<h3>Galaxy S10</h3>
+					<p>$699<del><sup>$999</sup></del></p>
+					<button onclick="document.location='store.html'">Buy</button>
+				</div>
+				<div class="saleTwo"><img src="img/ipad-air.jpg" alt="ipad" onclick="document.location='store.html'"></div>
+				<div class="textSaleTwo">
+					<h3>iPad Air</h3>
+					<p>$699<del><sup>$999</sup></del></p>
+					<button onclick="document.location='store.html'">Buy</button>
+				</div>
+				<div class="saleThree"><img src="img/iphone11.jpg" alt="iphone" onclick="document.location='store.html'"></div>
+				<div class="textSaleThree">
+					<h3>iPhone 11</h3>
+					<p>$699<del><sup>$999</sup></del></p>
+					<button onclick="document.location='store.html'">Buy</button>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footerTop">
+				<div class="hidden topLeft"><a href="index.html">Lucky Mobile</a></div>
+				<div class="topMiddle">
+					<div class="topMiddleOne"><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a></div>
+					<div class="topMiddleTwo"><a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter"></a></div>
+					<div class="topMiddleThree"><a href="https://www.gmail.com/"><img src="img/email.png" alt="gmail"></a></div>
+				</div>
+				<div class="topMiddleLeft">
+					<div class="topMiddleFour"><a href="terms.html">Terms</a></div>
+					<div class="topMiddleFive"><a href="policy.html">Policy</a></div>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<div class="footerBottomOne">Created By &copy; Team, 2020</div>
+			</div>
+			<div></div>
+		</footer>
+</div>
+<script>
+	//navbar
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('hamburger');
+	navBarToggle.addEventListener('click', function () {
+ 	 mainNav.classList.toggle('show');
+	});
+	
+	function myFunction(smallImg) {
+  var fullImg = document.getElementById("expandedImg");
+  expandedImg.src = smallImg.src;
+}
+</script>
+</body>
+</html>

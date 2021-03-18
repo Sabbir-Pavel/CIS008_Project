@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Lucky Mobile</title>
+	<link rel="stylesheet" href="style/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar">
+				<a href="index.html" class="logo">Lucky Mobile</a>
+				<button class="hamburger" id="hamburger">
+					<i class="fa fa-bars"></i>
+				</button>
+				<ul class="mainNav" id="js-menu">
+					<li>
+						<a href="index.html" class="nav-links">Home</a>
+					</li>
+					<li>
+						<a href="store.html" class="nav-links">Store </a>
+					<li>
+						<a href="about.html" class="nav-links">About</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-links">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="featured"><h1>Contact</h1></div>
+			<div class="contact">
+					<div class="abouthead">
+						<div class="about-1"><h3>We're here to help</h3></div>
+						<div class="about-2"><p>Screen repair</p></div>
+						<div class="about-3"><p>Battery replacement</p></div>
+						<div class="about-4"><p>Warranty</p></div>
+					</div>
+					<div class="aboutform">
+						<form>
+							<label>Name</label><br>
+							<input type="text" class="intext"><br><br>
+							<label>Email</label><br>
+							<input type="text" class="intext"><br><br>
+							<label>Message</label><br>
+							<textarea></textarea><br><br>
+							<button>Submit</button>
+						</form>
+					</div>
+					<div class="aboutText">
+						<div class="textimageOne">
+							<img src="img/home.png" alt="home">
+						</div>
+						<div class="textTextOne">
+							<p><b>Address</b></p>
+							<p>123 Main St, Santa Clara, CA, 95050</p>
+						</div>
+						<div class="textimageTwo">
+							<img src="img/phone.png" alt="call">
+						</div>
+						<div class="textTextTwo">
+							<p><b>Phone Number</b></p>
+							<p>(408)555-5555</p>
+						</div>
+						<div class="textimageThree">
+							<img src="img/clock.png" alt="hours">
+						</div>
+						<div class="textTextThree">
+							<p><b>Store Hours</b></p>
+							<p>Monday - Saturday: 8AM-7PM</p>
+							<p>Sunday: CLOSED</p>
+						</div>
+					</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footerTop">
+				<div class="hidden topLeft"><a href="index.html">Lucky Mobile</a></div>
+				<div class="topMiddle">
+					<div class="topMiddleOne"><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a></div>
+					<div class="topMiddleTwo"><a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter"></a></div>
+					<div class="topMiddleThree"><a href="https://www.gmail.com/"><img src="img/email.png" alt="gmail"></a></div>
+				</div>
+				<div class="topMiddleLeft">
+					<div class="topMiddleFour"><a href="terms.html">Terms</a></div>
+					<div class="topMiddleFive"><a href="policy.html">Policy</a></div>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<div class="footerBottomOne">Created By &copy; Team, 2020</div>
+			</div>
+			<div></div>
+		</footer>
+</div>
+<script>
+	//navbar
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('hamburger');
+	navBarToggle.addEventListener('click', function () {
+ 	 mainNav.classList.toggle('show');
+	});
+</script>
+</body>
+</html>

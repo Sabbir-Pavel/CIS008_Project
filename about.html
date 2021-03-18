@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Lucky Mobile</title>
+	<link rel="stylesheet" href="style/about.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<nav class="navbar">
+				<a href="index.html" class="logo">Lucky Mobile</a>
+				<button class="hamburger" id="hamburger">
+					<i class="fa fa-bars"></i>
+				</button>
+				<ul class="mainNav" id="js-menu">
+					<li>
+						<a href="index.html" class="nav-links">Home</a>
+					</li>
+					<li>
+						<a href="store.html" class="nav-links">Store </a>
+					<li>
+						<a href="about.html" class="nav-links">About</a>
+					</li>
+					<li>
+						<a href="contact.html" class="nav-links">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="featured"><h1>About</h1></div>
+			<div class="about">
+					<div class="aboutimage">
+						<img src="img/about.jpg" alt="about">
+					</div>
+					<div class="aboutText">
+						<p>Lucky Mobile is a leading mobile store, located in the heart of Silicon Valley. The company was founded in 2008 by Donald Biden and his wife, Hillary. Donald has a long history in the business world. He was the former president of a fortune 500 company but decided to open up a small store to fulfill his childhood dream. Hillary has a background in politics  and she decided to join her husband after her retirement.</p>
+						<p>Lucky Mobile buys and sells the latest smartphones on the market. Want to trade in your old phone? We'll take it and give you above market value. And don't forget our moto "Luck is on your side."</p>
+					</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footerTop">
+				<div class="hidden topLeft"><a href="index.html">Lucky Mobile</a></div>
+				<div class="topMiddle">
+					<div class="topMiddleOne"><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook"></a></div>
+					<div class="topMiddleTwo"><a href="https://www.twitter.com/"><img src="img/twitter.png" alt="twitter"></a></div>
+					<div class="topMiddleThree"><a href="https://www.gmail.com/"><img src="img/email.png" alt="gmail"></a></div>
+				</div>
+				<div class="topMiddleLeft">
+					<div class="topMiddleFour"><a href="terms.html">Terms</a></div>
+					<div class="topMiddleFive"><a href="policy.html">Policy</a></div>
+				</div>
+			</div>
+			<div class="footerBottom">
+				<div class="footerBottomOne">Created By &copy; Team, 2020</div>
+			</div>
+			<div></div>
+		</footer>
+</div>
+<script>
+	//navbar
+	let mainNav = document.getElementById('js-menu');
+	let navBarToggle = document.getElementById('hamburger');
+	navBarToggle.addEventListener('click', function () {
+ 	 mainNav.classList.toggle('show');
+	});
+</script>
+</body>
+</html>
